@@ -1,0 +1,7 @@
+#ファイル数表示
+echo | ls -1 |wc -l
+
+#カレントディレクトリ内の全ファイルの文字数表示
+for L in ${DIRPATH}*.txt; do echo | cat $L | wc -w ; done
+
+#行数表示

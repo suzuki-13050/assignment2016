@@ -1,0 +1,3 @@
+cv000*F = open("cv000*.txt", 'r')
+F.readlines()
+
