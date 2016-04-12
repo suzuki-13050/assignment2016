@@ -15,8 +15,8 @@ else:
 
 if (flg == True):
     for line in F:
-        #lineにsearch_wordの文字列が含まれていればTrue
-        if (search_word in line):
-             print(line,end="")
+        #0文字目以降にsearch_wordの文字列が含まれていればTrue
+        if (line.find(search_word) >=0):
+             print(line,end ="")
         
 F.close
